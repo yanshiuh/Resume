@@ -1,0 +1,20 @@
+.project-item-wrapper {
+  margin-bottom: 30px;
+}
+
+.project-item {
+  flex-basis: calc(33.33% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item .project-img img {
+  width: 100%;
+}

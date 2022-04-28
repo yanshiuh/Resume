@@ -1,0 +1,135 @@
+.contact {
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 23px;
+  color: #ec1839;
+}
+
+.sub-heading {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  font-weight: 550;
+}
+
+.sub-heading::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #ec1839;
+  position: absolute;
+  left: -55px;
+  top: 7px;
+}
+
+.sub-heading::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #ec1839;
+  position: absolute;
+  right: -55px;
+  top: 7px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contact-item {
+  flex-basis: calc(33.33% - 20px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-item .icon {
+  color: #ec1839;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-item h4 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-item h4 a {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.contact-item p {
+  font-weight: 500;
+}
+
+.email-box {
+  margin-top: 70px;
+  padding-bottom: 50px;
+}
+
+.email-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.email-row .name {
+  flex-basis: calc(50% - 10px);
+}
+
+.email-row .name input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.email-row .email {
+  flex-basis: calc(50% - 10px);
+}
+
+.email-row .email input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.subject {
+  margin-bottom: 30px;
+}
+
+.subject input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.message {
+  margin-bottom: 30px;
+}
+
+.message textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}

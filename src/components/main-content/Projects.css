@@ -1,0 +1,37 @@
+.projects {
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.title::before {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background-color: crimson;
+  position: absolute;
+  bottom: -20px;
+}
+
+.title::after {
+  content: "";
+  height: 5px;
+  width: 60px;
+  background-color: #ec1839;
+  position: absolute;
+  bottom: -10px;
+}
+
+.projects-box {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.projects-box-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,133 @@
+.about {
+  height: 100%;
+  width: 100%;
+}
+
+.about .title {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.title::before {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background-color: #ec1839;
+  position: absolute;
+  bottom: -20px;
+}
+
+.title::after {
+  content: "";
+  height: 5px;
+  width: 60px;
+  background-color: #ec1839;
+  position: absolute;
+  bottom: -10px;
+}
+
+.about h1 {
+  font-size: 35px;
+}
+
+.about-content {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.about-text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 19px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.about-details {
+  margin-top: 50px;
+  display: flex;
+  height: 100%;
+}
+
+.about-personal {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-personal .personal-item {
+  flex-basis: 50%;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  position: relative;
+  /* border-bottom: 1px solid rgb(227, 227, 227); */
+}
+
+.about-personal .personal-item::after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(227, 227, 227);
+}
+
+.about-personal .personal-item p {
+  font-weight: bold;
+}
+
+.about-personal .personal-item p span {
+  font-weight: normal;
+  display: inline-block;
+}
+
+.button {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.btn {
+  padding: 13px 30px !important;
+  border-radius: 25px !important;
+}
+
+.about-skills {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.skill-item h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.skill-item .progress {
+  display: flex;
+}
+
+.skill-item .progress {
+  background-color: rgb(228, 227, 227);
+}
+
+.skill-item .progress .progress-in {
+  background-color: #ec1839;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.skill-item .progress .skill-percent {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
