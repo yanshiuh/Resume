@@ -22,7 +22,7 @@ function Home() {
         <button className="btn">
           <a
             style={{ color: "white" }}
-            href={require("../../media/CV.pdf")}
+            href={require("../../media/Resume_YanShiuh.pdf")}
             download={"Resume"}
           >
             Download CV
