@@ -3,6 +3,7 @@ import "./Contact.css";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { ImLinkedin } from "react-icons/im";
+import { BsGithub } from "react-icons/bs";
 
 function Contact() {
   return (
@@ -29,7 +30,12 @@ function Contact() {
         </div>
 
         <div className="contact-item">
-          <ImLinkedin className="icon" />
+          <a
+            href="https://www.linkedin.com/in/kee-yan-shiuh-9369a5229/"
+            target="_blank"
+          >
+            <ImLinkedin className="icon" />
+          </a>
           <h4>
             <a
               href="https://www.linkedin.com/in/kee-yan-shiuh-9369a5229/"
@@ -39,6 +45,18 @@ function Contact() {
             </a>
           </h4>
           <p>Kee Yan Shiuh</p>
+        </div>
+
+        <div className="contact-item">
+          <a href="https://github.com/yanshiuh" target="_blank">
+            <BsGithub className="icon" />
+          </a>
+          <h4>
+            <a href="https://github.com/yanshiuh" target="_blank">
+              Github
+            </a>
+          </h4>
+          <p>yanshiuh</p>
         </div>
       </div>
 

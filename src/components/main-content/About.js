@@ -77,8 +77,8 @@ function About() {
             <div className="skill-item">
               <h5>HTML</h5>
               <div className="progress">
-                <div className="progress-in" style={{ width: "70%" }}></div>
-                <div className="skill-percent">70%</div>
+                <div className="progress-in" style={{ width: "60%" }}></div>
+                <div className="skill-percent">60%</div>
               </div>
             </div>
 
@@ -100,6 +100,14 @@ function About() {
 
             <div className="skill-item">
               <h5>React</h5>
+              <div className="progress">
+                <div className="progress-in" style={{ width: "40%" }}></div>
+                <div className="skill-percent">40%</div>
+              </div>
+            </div>
+
+            <div className="skill-item">
+              <h5>Java</h5>
               <div className="progress">
                 <div className="progress-in" style={{ width: "40%" }}></div>
                 <div className="skill-percent">40%</div>

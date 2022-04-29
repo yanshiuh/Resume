@@ -12,19 +12,24 @@ function History() {
         <div className="educations-timeline-box box-shadow">
           <TimelineItem
             date={"2020 - now"}
-            title={<u>University of Malaya</u>}
+            title={"University of Malaya"}
             text={
               <ul style={{ marginLeft: "20px" }}>
                 <li>Bachelor of Computer Science (Software Engineering)</li>
                 <br />
                 <li>
-                  President of Jawatankuasa Perkembangan (JKP) Sukan & Rekreasi
-                  2021/2022
+                  Software Maintenance Job for MeMoSA web app (Front-end part -
+                  React)
                 </li>
                 <br />
-                <li>Student Facilitator 2021/2022</li>
+                <li>
+                  Teaching Assistant / Lab Demonstrator for Fundamental of
+                  Programming Course (Java)
+                </li>
                 <br />
                 <li>Committee Member of Software Modeling Competition</li>
+                <br />
+                <li>CGPA 3.95</li>
                 <br />
                 <li>
                   <strong>Achievement:</strong> 2nd runner-up in Prosovle 2022
@@ -36,7 +41,7 @@ function History() {
 
           <TimelineItem
             date={"2019 - 2020"}
-            title={<u>Kolej Matrikulasi Melaka</u>}
+            title={"Kolej Matrikulasi Melaka"}
             text={
               <ul style={{ marginLeft: "20px" }}>
                 <li>PSPM CGPA 4.0</li>
@@ -46,7 +51,7 @@ function History() {
 
           <TimelineItem
             date={"2014 - 2018"}
-            title={<u>Sekolah Menengah Kebangsaan Gurun</u>}
+            title={"Sekolah Menengah Kebangsaan Gurun"}
             text={
               <ul style={{ marginLeft: "20px" }}>
                 <li>SPM 2018 - 7A+, 3A</li>
