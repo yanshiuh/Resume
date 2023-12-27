@@ -5,11 +5,11 @@ import TimelineItem from "./TimelineItem";
 function History() {
   return (
     <div className="history">
-      <div className="educations">
-        <div className="title">
+      <div className="educations h-[600px]">
+        <div className="title font-bold text-2xl">
           <h1>Educations</h1>
         </div>
-        <div className="educations-timeline-box box-shadow">
+        <div className="educations-timeline-box box-shadow overflow-y-scroll">
           <TimelineItem
             date={"2020 - now"}
             title={"University of Malaya"}
@@ -67,11 +67,11 @@ function History() {
         </div>
       </div>
 
-      <div className="educations">
-        <div className="title">
+      <div className="educations h-[600px]">
+        <div className="title font-bold text-2xl">
           <h1>Practices</h1>
         </div>
-        <div className="educations-timeline-box box-shadow">
+        <div className="educations-timeline-box box-shadow overflow-y-scroll">
           <TimelineItem
             date={""}
             title={"Amazon clone"}

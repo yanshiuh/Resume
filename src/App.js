@@ -19,14 +19,16 @@ function App() {
     <Router>
       <div className="container">
         <Sidebar />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/history" element={<History />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <div className="main-content bg-um bg-cover bg-bottom bg-no-repeat">
+          <div className="px-[50px] py-[60px] bg-gray-200 w-full h-full bg-opacity-70">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/history" element={<History />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router>

@@ -5,7 +5,7 @@
 
 .about .title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .title::before {
@@ -17,7 +17,6 @@
   bottom: -20px;
 }
 
-
 .title::after {
   content: "";
   height: 5px;
@@ -28,7 +27,7 @@
 }
 
 .about h1 {
-  font-size: 35px;
+  /* font-size: 35px; */
 }
 
 .about-content {

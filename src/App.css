@@ -3,10 +3,10 @@
 }
 
 .main-content {
-  background-color: #f2f2fc;
+  /* background-color: #f2f2fc; */
   min-height: 100vh;
-  padding: 50px 60px;
-  opacity: 1;
+  /* padding: 50px 60px; */
+  /* opacity: 1; */
 
   position: fixed;
   left: 270px;

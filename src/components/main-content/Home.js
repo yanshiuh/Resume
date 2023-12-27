@@ -3,15 +3,15 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home ">
+    <div className="home bg-white rounded-2xl px-10 pl-12 bg-opacity-80">
       <div className="text">
         <h1>
-          Hello, my name is <span>Kee Yan Shiuh</span>
+          Hello, my name is <span className="font-semibold">Kee Yan Shiuh</span>
         </h1>
         <h3>
-          I'm a <span>2nd year student</span>
+          I'm a <span className="font-semibold">Final year student</span>
         </h3>
-        <p>
+        <p className="text-black font-semibold w-[650px] leading-8">
           {" "}
           A University Malaya student, studying Computer Science majoring in
           Software Engineering. I'm interested in Web Development. and I learnt

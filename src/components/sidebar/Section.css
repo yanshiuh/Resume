@@ -1,9 +1,9 @@
 .link {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px;
   padding: 5px 10px;
-  border-bottom: 1px solid rgb(227, 227, 227);
+  border-bottom: 1px solid rgb(227, 227, 227); */
   cursor: pointer;
   transition: all 0.3s ease;
 }

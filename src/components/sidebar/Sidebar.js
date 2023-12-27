@@ -3,7 +3,7 @@ import "../sidebar/Sidebar.css";
 import { AiFillHome, AiFillAppstore } from "react-icons/ai";
 import { BsFillPersonFill, BsListUl } from "react-icons/bs";
 import { IoChatbubblesSharp } from "react-icons/io5";
-import Page from "./Page";
+import Section from "./Section";
 import { Link, useLocation } from "react-router-dom";
 
 function Sidebar() {
@@ -16,7 +16,43 @@ function Sidebar() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
   const location = useLocation();
-  console.log(location.pathname);
+  const routes = [
+    {
+      to: "/",
+      link: "Home",
+      activeType: activeHome,
+      icon: AiFillHome,
+      action: () => setActive("home"),
+    },
+    {
+      to: "/about",
+      link: "About",
+      activeType: activeAbout,
+      icon: BsFillPersonFill,
+      action: () => setActive("about"),
+    },
+    {
+      to: "/history",
+      link: "History",
+      activeType: activeHistory,
+      icon: BsListUl,
+      action: () => setActive("history"),
+    },
+    {
+      to: "/projects",
+      link: "Projects",
+      activeType: activeProjects,
+      icon: AiFillAppstore,
+      action: () => setActive("projects"),
+    },
+    {
+      to: "/contact",
+      link: "Contact",
+      activeType: activeContact,
+      icon: IoChatbubblesSharp,
+      action: () => setActive("contact"),
+    },
+  ];
 
   const setActive = (page) => {
     setActiveHome(false);
@@ -47,11 +83,11 @@ function Sidebar() {
   };
 
   return (
-    <div className={`sidebar ${toggleSidebar ? " open" : ""}`}>
+    <div className={`sidebar ${toggleSidebar ? " open" : ""} bg-white`}>
       <div className="logo">
         <a href="/">
           <h3>
-            <span>Re</span>sume
+            <span>Ys&apos; </span>resume
           </h3>
         </a>
       </div>
@@ -66,51 +102,15 @@ function Sidebar() {
 
       <div className="nav">
         <div className="navbar">
-          <Page
-            to="/"
-            link="Home"
-            activeType={activeHome}
-            iconDisplay={AiFillHome}
-            click={() => setActive("home")}
-          />
-          <Page
-            to="/about"
-            link="About"
-            activeType={activeAbout}
-            iconDisplay={BsFillPersonFill}
-            click={() => setActive("about")}
-          />
-          <Page
-            to="/history"
-            link="History"
-            activeType={activeHistory}
-            iconDisplay={BsListUl}
-            click={() => setActive("history")}
-          />
-          <Page
-            to="/projects"
-            link="Projects"
-            activeType={activeProjects}
-            iconDisplay={AiFillAppstore}
-            click={() => setActive("projects")}
-          />
-          <Page
-            to="/contact"
-            link="Contact"
-            activeType={activeContact}
-            iconDisplay={IoChatbubblesSharp}
-            click={() => setActive("contact")}
-          />
-
-          {/* <div
-            className={`link ${activeHome ? " active" : ""}`}
-            onClick={() => setActive("home")}
-          >
-            <AiFillHome />
-            <a href="#" onClick={(e) => e.preventDefault()}>
-              Home
-            </a>
-          </div> */}
+          {routes.map((route) => (
+            <Section
+              to={route.to}
+              link={route.link}
+              activeType={route.activeType}
+              iconDisplay={route.icon}
+              click={route.action}
+            />
+          ))}
         </div>
       </div>
     </div>

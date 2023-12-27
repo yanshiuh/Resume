@@ -5,8 +5,8 @@ import "./About.css";
 function About() {
   const navigate = useNavigate();
   return (
-    <div className="about">
-      <div className="title">
+    <div className="about bg-white rounded-2xl p-10 bg-opacity-80 overflow-y-scroll">
+      <div className="title text-3xl font-bold">
         <h1>About</h1>
       </div>
 

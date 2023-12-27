@@ -4,12 +4,12 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="projects">
-      <div className="title">
+    <div className="projects bg-white rounded-2xl p-10 bg-opacity-80">
+      <div className="title font-bold text-3xl">
         <h1>Projects</h1>
       </div>
 
-      <div className="heading">
+      <div className="heading font-semibold">
         <h2>My Practices:</h2>
       </div>
 

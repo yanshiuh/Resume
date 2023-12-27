@@ -7,8 +7,8 @@ import { BsGithub } from "react-icons/bs";
 
 function Contact() {
   return (
-    <div className="contact">
-      <div className="title">
+    <div className="contact bg-white rounded-2xl p-10 bg-opacity-80">
+      <div className="title font-bold text-3xl">
         <h1>Contact Me</h1>
       </div>
 
@@ -18,13 +18,13 @@ function Contact() {
 
       <div className="contact-row">
         <div className="contact-item">
-          <BsTelephoneFill className="icon" />
+          <BsTelephoneFill className="icon" size={25} />
           <h4>Contact</h4>
           <p>017-5809218</p>
         </div>
 
         <div className="contact-item">
-          <MdEmail className="icon" />
+          <MdEmail className="icon" size={25} />
           <h4>Email</h4>
           <p>yanshiuh12372@gmail.com</p>
         </div>
@@ -34,7 +34,7 @@ function Contact() {
             href="https://www.linkedin.com/in/kee-yan-shiuh-9369a5229/"
             target="_blank"
           >
-            <ImLinkedin className="icon" />
+            <ImLinkedin className="icon" size={25} />
           </a>
           <h4>
             <a
@@ -49,7 +49,7 @@ function Contact() {
 
         <div className="contact-item">
           <a href="https://github.com/yanshiuh" target="_blank">
-            <BsGithub className="icon" />
+            <BsGithub className="icon" size={25} />
           </a>
           <h4>
             <a href="https://github.com/yanshiuh" target="_blank">
@@ -61,29 +61,9 @@ function Contact() {
       </div>
 
       <form className="email-box">
-        <h3 className="heading">SENT ME AN EMAIL</h3>
+        <h3 className="heading">SEND ME AN EMAIL</h3>
 
         <p className="sub-heading">I'M VERY RESPONSIVE TO MESSAGES</p>
-
-        {/* <div className="email-row">
-          <div className="name">
-            <input type={"name"} placeholder="Name" />
-          </div>
-
-          <div className="email">
-            <input type={"email"} placeholder="Email" />
-          </div>
-        </div>
-
-        <div className="subject">
-          <input type={"subject"} placeholder="Subject" />
-        </div>
-
-        <div className="message">
-          <textarea placeholder="Message" />
-        </div>
-
-        <input type={"button"} className="btn" value="Send Message" /> */}
       </form>
     </div>
   );

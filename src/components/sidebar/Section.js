@@ -1,11 +1,11 @@
 import React from "react";
-import "./Page.css";
+import "./Section.css";
 import { AiFillHome, AiFillAppstore } from "react-icons/ai";
 import { BsFillPersonFill, BsListUl } from "react-icons/bs";
 import { IoChatbubblesSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-function Page({ to, link, activeType, iconDisplay, click }) {
+function Section({ to, link, activeType, iconDisplay, click }) {
   function renderIcon(iconDisplay) {
     switch (iconDisplay) {
       case AiFillHome:
@@ -24,12 +24,17 @@ function Page({ to, link, activeType, iconDisplay, click }) {
   }
   return (
     <Link to={to}>
-      <div className={`link ${activeType ? " active" : ""}`} onClick={click}>
+      <div
+        className={`link ${
+          activeType ? " active" : ""
+        } my-4 border-b-2 pb-2 w-40`}
+        onClick={click}
+      >
         {renderIcon(iconDisplay)}
-        <h4>{link}</h4>
+        <h4 className="ml-2">{link}</h4>
       </div>
     </Link>
   );
 }
 
-export default Page;
+export default Section;
