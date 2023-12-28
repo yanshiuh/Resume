@@ -48,7 +48,7 @@ function About() {
     {
       name: "Java",
       rate: "50",
-      styling: "w-[55%]",
+      styling: "w-[50%]",
     },
     {
       name: "React.js",
