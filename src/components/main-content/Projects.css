@@ -5,14 +5,14 @@
 
 .title {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .title::before {
   content: "";
   height: 5px;
   width: 30px;
-  background-color: crimson;
+  background-color: #f87171;
   position: absolute;
   bottom: -20px;
 }
@@ -21,7 +21,7 @@
   content: "";
   height: 5px;
   width: 60px;
-  background-color: #ec1839;
+  background-color: #f87171;
   position: absolute;
   bottom: -10px;
 }

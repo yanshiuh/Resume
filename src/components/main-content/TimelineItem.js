@@ -7,9 +7,9 @@ function TimelineItem({ date, title, text }) {
       <div className="circle-dot"></div>
       <h3 className="timeline-date">
         <FcCalendar />
-        <span>{date}</span>
+        <span className="font-bold ">{date}</span>
       </h3>
-      <h3 className="timeline-title">{title}</h3>
+      <h3 className="timeline-title font-semibold">{title}</h3>
       <p className="timeline-text">{text}</p>
     </div>
   );

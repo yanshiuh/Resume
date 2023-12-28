@@ -6,7 +6,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 23px;
-  color: #ec1839;
+  color: #f87171;
 }
 
 .sub-heading {
@@ -22,7 +22,7 @@
   content: "";
   width: 40px;
   height: 2px;
-  background-color: #ec1839;
+  background-color: #f87171;
   position: absolute;
   left: -55px;
   top: 7px;
@@ -32,7 +32,7 @@
   content: "";
   width: 40px;
   height: 2px;
-  background-color: #ec1839;
+  background-color: #f87171;
   position: absolute;
   right: -55px;
   top: 7px;
@@ -54,7 +54,7 @@
 }
 
 .contact-item .icon {
-  color: #ec1839;
+  color: #f87171;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -75,8 +75,8 @@
 }
 
 .email-box {
-  margin-top: 70px;
-  padding-bottom: 50px;
+  margin-top: 85px;
+  padding-bottom: 10px;
 }
 
 .email-row {

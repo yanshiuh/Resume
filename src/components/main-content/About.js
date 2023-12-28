@@ -1,118 +1,114 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./About.css";
+import { Button } from "react-daisyui";
 
 function About() {
   const navigate = useNavigate();
+  const details = [
+    {
+      field: "Birthday",
+      data: "23 Feb 2001",
+    },
+    {
+      field: "Age",
+      data: "23",
+    },
+    {
+      field: "Website",
+      data: "https://resume-yanshiuh.netlify.app/",
+    },
+    {
+      field: "Email",
+      data: "yanshiuh12372@gmail.com",
+    },
+    {
+      field: "Degree",
+      data: "Software Engineering",
+    },
+    {
+      field: "Phone",
+      data: "+6017-5809218",
+    },
+    {
+      field: "State",
+      data: "Kedah",
+    },
+    {
+      field: "City",
+      data: "Gurun",
+    },
+  ];
+  const ratings = [
+    {
+      name: "HTML, CSS & JavaScript",
+      rate: 60,
+    },
+    {
+      name: "Java",
+      rate: "50",
+    },
+    {
+      name: "React.js",
+      rate: "50",
+    },
+    {
+      name: "Next.js",
+      rate: "50",
+    },
+    {
+      name: "Spring Boot",
+      rate: "50",
+    },
+  ];
+
   return (
     <div className="about bg-white rounded-2xl p-10 bg-opacity-80 overflow-y-scroll">
-      <div className="title text-3xl font-bold">
+      <div className="title text-3xl font-bold flex items-center justify-between">
         <h1>About</h1>
+
+        <Button className="bg-red-400" onClick={() => navigate("/contact")}>
+          Contact Me
+        </Button>
       </div>
 
       <div className="about-content">
         <div className="about-text">
-          <h2>
+          {/* <h2>
             I'm Yan Shiuh and <span>UM student</span>{" "}
-          </h2>
-          <p>
-            A University Malaya student, studying Computer Science majoring in
-            Software Engineering. I'm interested in Web Development. and I
-            learnt HTML, CSS and JavaScript. There are few frameworks I learnt
-            which are React and Express.
+          </h2> */}
+          <p className="w-[800px]">
+            Below are my personal details and some ratings about my skill on
+            several programming languages or frameworks
           </p>
         </div>
 
         <div className="about-details">
           <div className="about-personal">
-            <div className="personal-item">
-              <p>
-                Birthday: <span>23 Feb 2001</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                Age: <span>21</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                Website: <span>www.domain.com</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                Email: <span>yanshiuh12372@gmail.com</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                Degree: <span>Software Engineering</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                Phone: <span>+6017-5809218</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                State:<span>Kedah</span>
-              </p>
-            </div>
-            <div className="personal-item">
-              <p>
-                City: <span>Gurun</span>
-              </p>
-            </div>
-
-            <div className="button">
-              <button className="btn" onClick={() => navigate("/contact")}>
-                Contact Me
-              </button>
-            </div>
+            {details.map((detail, i) => (
+              <div className="personal-item" key={i}>
+                <p>
+                  {detail.field}:{" "}
+                  <div className="font-normal">{detail.data}</div>
+                </p>
+              </div>
+            ))}
           </div>
 
           <div className="about-skills">
-            <div className="skill-item">
-              <h5>HTML</h5>
-              <div className="progress">
-                <div className="progress-in" style={{ width: "60%" }}></div>
-                <div className="skill-percent">60%</div>
+            {ratings.map((skill, i) => (
+              <div className="skill-item" key={i}>
+                <div className="flex items-center justify-between">
+                  <h5>{skill.name}</h5>
+                  <p>{skill.rate}%</p>
+                </div>
+                <div className="w-full bg-gray-300 h-2 rounded-3xl">
+                  <div
+                    className={`w-[${skill.rate}%] h-2 rounded-3xl bg-red-400`}
+                  ></div>
+                </div>
               </div>
-            </div>
-
-            <div className="skill-item">
-              <h5>CSS</h5>
-              <div className="progress">
-                <div className="progress-in" style={{ width: "50%" }}></div>
-                <div className="skill-percent">50%</div>
-              </div>
-            </div>
-
-            <div className="skill-item">
-              <h5>JavaScript</h5>
-              <div className="progress">
-                <div className="progress-in" style={{ width: "40%" }}></div>
-                <div className="skill-percent">40%</div>
-              </div>
-            </div>
-
-            <div className="skill-item">
-              <h5>React</h5>
-              <div className="progress">
-                <div className="progress-in" style={{ width: "40%" }}></div>
-                <div className="skill-percent">40%</div>
-              </div>
-            </div>
-
-            <div className="skill-item">
-              <h5>Java</h5>
-              <div className="progress">
-                <div className="progress-in" style={{ width: "40%" }}></div>
-                <div className="skill-percent">40%</div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

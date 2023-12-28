@@ -15,9 +15,9 @@
   z-index: 10;
 }
 
-.navbar .link.active,
-.navbar .link.active a {
-  color: #ec1839;
+.navItem .linkItem.active,
+.navItem .linkItem.active a {
+  color: #f87171;
 }
 
 .logo {
@@ -30,8 +30,8 @@
   content: "";
   height: 20px;
   width: 20px;
-  border-bottom: 5px solid #ec1839;
-  border-left: 5px solid #ec1839;
+  border-bottom: 5px solid #f87171;
+  border-left: 5px solid #f87171;
   position: absolute;
   bottom: 0;
   left: -5px;
@@ -42,8 +42,8 @@
   height: 20px;
   width: 20px;
 
-  border-top: 5px solid #ec1839;
-  border-right: 5px solid #ec1839;
+  border-top: 5px solid #f87171;
+  border-right: 5px solid #f87171;
   position: absolute;
   top: 0;
   right: -5px;
@@ -56,7 +56,7 @@
 }
 
 .logo a h3 span {
-  color: #ec1839;
+  color: #f87171;
 }
 
 .nav {

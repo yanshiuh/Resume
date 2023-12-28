@@ -21,7 +21,7 @@
 }
 
 .text h1 span {
-  color: #ec1839;
+  color: #f87171;
 }
 
 .text h3 {
@@ -30,7 +30,7 @@
 }
 
 .text h3 span {
-  color: #ec1839;
+  color: #f87171;
 }
 
 .text p {
@@ -45,7 +45,7 @@
   padding: 20px 25px;
   border: none;
   border-radius: 20px;
-  background: #ec1839;
+  background: #f87171;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -68,8 +68,8 @@
   content: "";
   height: 70px;
   width: 70px;
-  border-bottom: 10px solid #ec1839;
-  border-left: 10px solid #ec1839;
+  border-bottom: 10px solid #f87171;
+  border-left: 10px solid #f87171;
   position: absolute;
   bottom: -15px;
   left: 15px;
@@ -79,8 +79,8 @@
   content: "";
   height: 70px;
   width: 70px;
-  border-top: 10px solid #ec1839;
-  border-right: 10px solid #ec1839;
+  border-top: 10px solid #f87171;
+  border-right: 10px solid #f87171;
   position: absolute;
   top: -15px;
   right: 15px;
@@ -125,7 +125,7 @@
     padding: 25px 30px;
     border: none;
     border-radius: 20px;
-    background: #ec1839;
+    background: #f87171;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
@@ -153,10 +153,47 @@
     padding: 25px 30px;
     border: none;
     border-radius: 20px;
-    background: #ec1839;
+    background: #f87171;
     color: #fff;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease;
+  }
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid #f87171;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 1s steps(20, end) alternate forwards, blink 0.8s infinite;
+}
+
+.typed-out2 {
+  overflow: hidden;
+  border-right: 0.15em solid #f87171;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #f87171;
   }
 }

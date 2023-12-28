@@ -13,7 +13,7 @@ function PracticesVideo({ websiteLink, videoLink, websiteName }) {
           </a>
         </div>
       </div>
-      <h3 style={{ textAlign: "center", cursor: "pointer" }}>{websiteName}</h3>
+      <h3 className="text-center font-semibold">{websiteName}</h3>
     </div>
   );
 }

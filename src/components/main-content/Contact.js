@@ -60,11 +60,11 @@ function Contact() {
         </div>
       </div>
 
-      <form className="email-box">
+      <div className="email-box">
         <h3 className="heading">SEND ME AN EMAIL</h3>
 
         <p className="sub-heading">I'M VERY RESPONSIVE TO MESSAGES</p>
-      </form>
+      </div>
     </div>
   );
 }

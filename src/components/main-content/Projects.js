@@ -3,49 +3,48 @@ import PracticesVideo from "./PracticesVideo";
 import "./Projects.css";
 
 function Projects() {
+  const items = [
+    {
+      name: "Amogus",
+      link: "https://amogus-five.vercel.app",
+      video: require("../../media/videos/Amogus.mp4"),
+    },
+    {
+      name: "OLa",
+      link: "https://ola-um.vercel.app",
+      video: require("../../media/videos/OLa.mp4"),
+    },
+    {
+      name: "Card Memory Game",
+      link: "https://card-memory-game-ys.netlify.app",
+      video: require("../../media/videos/memory-game.mp4"),
+    },
+    {
+      name: "Task Tracker",
+      link: "https://task-tracker-ys.netlify.app",
+      video: require("../../media/videos/task-tracker.mp4"),
+    },
+  ];
+
   return (
-    <div className="projects bg-white rounded-2xl p-10 bg-opacity-80">
+    <div className="projects bg-white rounded-2xl p-10 bg-opacity-80 overflow-y-scroll">
       <div className="title font-bold text-3xl">
         <h1>Projects</h1>
       </div>
 
-      <div className="heading font-semibold">
-        <h2>My Practices:</h2>
+      <div className="font-semibold text-center text-xl">
+        <h2>My Project / Practices:</h2>
       </div>
 
       <div className="projects-box">
         <div className="projects-box-row">
-          {/* <div className="project-item box-shadow">
-            <div className="project-img">
-              <video autoPlay loop muted width={"300px"}>
-                <source
-                  src={require("../../media/videos/amazon-clone.mp4")}
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <h3 style={{ textAlign: "center", marginTop: "20px" }}>
-              Amazon-clone
-            </h3>
-          </div> */}
-
-          <PracticesVideo
-            websiteLink="https://amazon-clone-yanshiuh.netlify.app"
-            videoLink={require("../../media/videos/amazon-clone.mp4")}
-            websiteName="Amazon clone"
-          />
-
-          <PracticesVideo
-            websiteLink="https://card-memory-game-ys.netlify.app"
-            videoLink={require("../../media/videos/memory-game.mp4")}
-            websiteName="Card Memory Game"
-          />
-
-          <PracticesVideo
-            websiteLink="https://task-tracker-ys.netlify.app"
-            videoLink={require("../../media/videos/task-tracker.mp4")}
-            websiteName="Task Tracker"
-          />
+          {items.map((item, i) => (
+            <PracticesVideo
+              websiteName={item.name}
+              websiteLink={item.link}
+              videoLink={item.video}
+            />
+          ))}
         </div>
       </div>
     </div>

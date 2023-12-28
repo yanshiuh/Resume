@@ -1,4 +1,4 @@
-.link {
+.linkItem {
   display: flex;
   align-items: center;
   /* margin-bottom: 20px;
@@ -8,7 +8,7 @@
   transition: all 0.3s ease;
 }
 
-.link:hover {
+.linkItem:hover {
   transform: scale(1.1);
 }
 
