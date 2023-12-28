@@ -42,23 +42,28 @@ function About() {
   const ratings = [
     {
       name: "HTML, CSS & JavaScript",
-      rate: 60,
+      rate: "60",
+      styling: "w-[60%]",
     },
     {
       name: "Java",
       rate: "50",
+      styling: "w-[55%]",
     },
     {
       name: "React.js",
       rate: "50",
+      styling: "w-[50%]",
     },
     {
       name: "Next.js",
-      rate: "50",
+      rate: "45",
+      styling: "w-[45%]",
     },
     {
       name: "Spring Boot",
-      rate: "50",
+      rate: "45",
+      styling: "w-[45%]",
     },
   ];
 
@@ -104,7 +109,7 @@ function About() {
                 </div>
                 <div className="w-full bg-gray-300 h-2 rounded-3xl">
                   <div
-                    className={`w-[${skill.rate}%] h-2 rounded-3xl bg-red-400`}
+                    className={`${skill.styling} h-2 rounded-3xl bg-red-400`}
                   ></div>
                 </div>
               </div>
